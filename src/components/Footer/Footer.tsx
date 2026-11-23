@@ -22,7 +22,7 @@ const Footer: React.FC = () => {
             <div className="section-content">
               <div className="logo-container">
                 <img className="logo-image" src={Logo} alt="Adoptree Logo" />
-                <h2 className="text-[22px] font-[700]">Adoptree</h2>
+                <h2 className="text-[22px] font-bold">Adoptree</h2>
               </div>
               <p>
                 {language === 'es'

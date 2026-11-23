@@ -1,6 +1,6 @@
 import React from 'react';
 import donacionesImage from '../../assets/Donaciones.png';
-import { useNavigate } from 'react-router-dom';
+import { useNavigate } from 'react-router';
 import { Heart } from 'lucide-react';
 
 interface DonacionesProps {
@@ -45,7 +45,7 @@ const Donaciones: React.FC<DonacionesProps> = ({ language }) => {
           <span className="text-orange-500 fuentePersonalizada fuente tracking-wide">
             {donations}
           </span>
-          <h2 className="text-3xl font-[800] text-gray-900 mb-4">{title}</h2>
+          <h2 className="text-3xl font-extrabold text-gray-900 mb-4">{title}</h2>
         </div>
 
         <div className="flex flex-col md:flex-row items-center justify-start gap-8 md:gap-12">
@@ -63,7 +63,7 @@ const Donaciones: React.FC<DonacionesProps> = ({ language }) => {
 
             <button
               onClick={handleDonationClick}
-              className="inline-flex items-center px-6 py-3 font-semibold text-white bg-gradient-to-r from-green-500 to-green-600 rounded-lg shadow-lg hover:from-green-600 hover:to-green-700 transition-all duration-300 transform hover:-translate-y-1"
+              className="inline-flex items-center px-6 py-3 font-semibold text-white bg-linear-to-r from-green-500 to-green-600 rounded-lg shadow-lg hover:from-green-600 hover:to-green-700 transition-all duration-300 transform hover:-translate-y-1"
             >
               <Heart className="mr-2" size={20} />
               {donateHere}

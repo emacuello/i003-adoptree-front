@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import backgroundImage from '../../assets/citricos.jpg';
 import logo from '../../assets/Header.png';
-import { Link, useNavigate } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router';
 import { useDispatch } from 'react-redux';
 import GoogleSignIn from '../GoogleSignIn/GoogleSignIn';
 import { validateForm } from '../../helpers/validateForm';
@@ -165,10 +165,10 @@ const Login: React.FC = () => {
 
   return (
     <div className="login-container p-[50px]">
-      <div className="login-image shadow-sm">
+      <div className="login-image shadow-xs">
         <img src={backgroundImage} alt="Background" />
       </div>
-      <div className="login-form shadow-sm">
+      <div className="login-form shadow-xs">
         <a href="/">
           <img
             src={logo}
@@ -176,7 +176,7 @@ const Login: React.FC = () => {
             className="logo w-[115px] mb-[30px]"
           />
         </a>
-        <h2 className="mb-[30px] font-[900]">
+        <h2 className="mb-[30px] font-black">
           Hola, <br /> Bienvenido de nuevo
         </h2>
         <p className="text-[14px]">Inicie sesión para gestionar su cuenta.</p>
@@ -210,7 +210,7 @@ const Login: React.FC = () => {
 
           <button
             type="submit"
-            className="text-white bg-gradient-to-r from-green-500 to-green-600 rounded-[10px] shadow-lg hover:from-green-600 hover:to-green-700 transition-all duration-300 transform"
+            className="text-white bg-linear-to-r from-green-500 to-green-600 rounded-[10px] shadow-lg hover:from-green-600 hover:to-green-700 transition-all duration-300 transform"
             disabled={isBlocked} // Deshabilitar el botón si está bloqueado
           >
             Inicia sesión
@@ -223,7 +223,7 @@ const Login: React.FC = () => {
 
         <p className="signup-text text-[14px] mt-[20px]">
           ¿Todavía no tenés cuenta?{' '}
-          <Link className="font-[500]" to="/auth/register">
+          <Link className="font-medium" to="/auth/register">
             Registrate
           </Link>
         </p>

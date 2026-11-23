@@ -12,7 +12,7 @@ const DescubreMas: React.FC = () => {
     <section className="lg:px-[200px] 2xl:px-[130px] my-[150px]">
       <div className="max-w-6xl">
         <div className="text-center mb-16">
-          <h2 className="text-[3rem] font-[900] mb-[1.3rem]">
+          <h2 className="text-[3rem] font-black mb-[1.3rem]">
             {language === 'es' ? 'Descubre Más' : 'Discover More'}
           </h2>
           <p className="text-lg text-gray-600 max-w-3xl mx-auto">

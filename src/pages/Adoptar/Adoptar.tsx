@@ -3,7 +3,7 @@ import AdoptarArbol from '../../components/AdoptarArbol/AdoptarArbol';
 import { InputAdornment, TextField } from '@mui/material';
 import SearchIcon from '@mui/icons-material/Search';
 import { useGetArbolesQuery } from '../../store/services/arbolApi';
-import { useSearchParams } from 'react-router-dom';
+import { useSearchParams } from 'react-router';
 import { ArbolInterface } from '../../store/services/arbolApi';
 import { motion } from 'framer-motion';
 import './Adoptar.css';
@@ -63,7 +63,7 @@ const Adoptar: React.FC = () => {
   }
 
   return (
-    <div className="px-4 sm:px-6 md:px-8 lg:px-12 xl:px-16 2xl:px-28 my-[116px] max-w-screen-2xl mx-auto">
+    <div className="px-4 sm:px-6 md:px-8 lg:px-12 xl:px-16 2xl:px-28 my-[116px] max-w-(--breakpoint-2xl) mx-auto">
       <motion.h1
         className="text-3xl sm:text-4xl font-bold mb-2 mt-6 sm:mt-8"
         initial={{ opacity: 0, y: -20 }}
@@ -111,12 +111,14 @@ const Adoptar: React.FC = () => {
           variant="outlined"
           value={searchTerm}
           onChange={(e) => setSearchTerm(e.target.value)}
-          InputProps={{
-            endAdornment: (
-              <InputAdornment position="end">
-                <SearchIcon />
-              </InputAdornment>
-            ),
+          slotProps={{
+            input: {
+              endAdornment: (
+                <InputAdornment position="end">
+                  <SearchIcon />
+                </InputAdornment>
+              ),
+            },
           }}
         />
       </motion.div>

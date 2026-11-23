@@ -71,7 +71,7 @@ const MiPerfil: React.FC<MiPerfilProps> = ({ user }) => {
             name="name"
             value={formData.name}
             onChange={handleChange}
-            className="w-full p-2 border border-gray-300 rounded mt-1"
+            className="w-full p-2 border border-gray-300 rounded-sm mt-1"
             readOnly={!isEditing}
           />
         </div>
@@ -82,7 +82,7 @@ const MiPerfil: React.FC<MiPerfilProps> = ({ user }) => {
             name="email"
             value={formData.email}
             onChange={handleChange}
-            className="w-full p-2 border border-gray-300 rounded mt-1"
+            className="w-full p-2 border border-gray-300 rounded-sm mt-1"
             readOnly={!isEditing}
           />
         </div>
@@ -93,7 +93,7 @@ const MiPerfil: React.FC<MiPerfilProps> = ({ user }) => {
             name="role"
             value={formData.role}
             onChange={handleChange}
-            className="w-full p-2 border border-gray-300 rounded mt-1"
+            className="w-full p-2 border border-gray-300 rounded-sm mt-1"
             readOnly={!isEditing}
           />
         </div>
@@ -104,7 +104,7 @@ const MiPerfil: React.FC<MiPerfilProps> = ({ user }) => {
             <>
               <button
                 type="submit"
-                className="text-white bg-gradient-to-r from-green-500 to-green-600 rounded-[10px] shadow-lg hover:from-green-600 hover:to-green-700 transition-all duration-300 transform"
+                className="text-white bg-linear-to-r from-green-500 to-green-600 rounded-[10px] shadow-lg hover:from-green-600 hover:to-green-700 transition-all duration-300 transform"
               >
                 Guardar
               </button>
@@ -120,7 +120,7 @@ const MiPerfil: React.FC<MiPerfilProps> = ({ user }) => {
             <button
               type="button"
               onClick={() => setIsEditing(true)}
-              className="text-white bg-gradient-to-r from-green-500 to-green-600 rounded-[10px] shadow-lg hover:from-green-600 hover:to-green-700 transition-all duration-300 transform"
+              className="text-white bg-linear-to-r from-green-500 to-green-600 rounded-[10px] shadow-lg hover:from-green-600 hover:to-green-700 transition-all duration-300 transform"
             >
               Editar
             </button>

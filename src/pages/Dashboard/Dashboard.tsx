@@ -56,7 +56,7 @@ const Dashboard = () => {
   return (
     <div className="flex min-h-screen bg-gray-100 text-gray-900 mt-[92px]">
       {/* Sidebar */}
-      <aside className="w-64 bg-gradient-to-r from-green-500 to-green-600 text-white p-6 space-y-6 shadow-2xl">
+      <aside className="w-64 bg-linear-to-r from-green-500 to-green-600 text-white p-6 space-y-6 shadow-2xl">
         <h2 className="text-3xl font-bold mb-8">AdoptTree 🌱</h2>
         <nav>
           <ul className="space-y-4">

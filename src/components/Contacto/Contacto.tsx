@@ -43,7 +43,7 @@ const ContactForm: React.FC = () => {
             value={formData.name}
             onChange={handleChange}
             required
-            className="w-full p-3 mb-4 border border-gray-300 rounded-lg text-black focus:border-orange-500 focus:outline-none"
+            className="w-full p-3 mb-4 border border-gray-300 rounded-lg text-black focus:border-orange-500 focus:outline-hidden"
           />
         </div>
         <div className="mb-4">
@@ -57,7 +57,7 @@ const ContactForm: React.FC = () => {
             value={formData.email}
             onChange={handleChange}
             required
-            className="w-full p-3 mb-4 border border-gray-300 rounded-lg text-black focus:border-orange-500 focus:outline-none"
+            className="w-full p-3 mb-4 border border-gray-300 rounded-lg text-black focus:border-orange-500 focus:outline-hidden"
           />
         </div>
         <div className="mb-4">
@@ -70,12 +70,12 @@ const ContactForm: React.FC = () => {
             value={formData.message}
             onChange={handleChange}
             required
-            className="w-full p-3 mb-4 border border-gray-300 rounded-lg text-black focus:border-orange-500 focus:outline-none"
+            className="w-full p-3 mb-4 border border-gray-300 rounded-lg text-black focus:border-orange-500 focus:outline-hidden"
           />
         </div>
         <button
           type="submit"
-          className="w-full p-3 bg-gradient-to-r from-orange-500 to-green-500 text-white rounded-3xl font-medium hover:bg-gradient-to-r hover:from-green-500 hover:to-orange-500 transition-colors"
+          className="w-full p-3 bg-linear-to-r from-orange-500 to-green-500 text-white rounded-3xl font-medium hover:bg-linear-to-r hover:from-green-500 hover:to-orange-500 transition-colors"
         >
           Enviar
         </button>

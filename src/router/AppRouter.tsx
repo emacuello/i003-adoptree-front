@@ -1,4 +1,4 @@
-import { Routes, Route } from 'react-router-dom';
+import { Routes, Route } from 'react-router';
 import AdoptreeRoutes from '../routes/AdoptreeRoutes';
 import Login from '../components/Login/Login';
 import Registro from '../components/Login/Registro';

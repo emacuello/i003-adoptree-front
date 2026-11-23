@@ -2,7 +2,7 @@ import React from 'react';
 import beneficiosImage from '../../assets/beneficios.jpg'; // Importación de la imagen
 import CheckCircleIcon from '@mui/icons-material/CheckCircle'; // Iconos
 import './Beneficios.css'; // Importación del CSS
-import { Link } from 'react-router-dom'; // Link para la navegación
+import { Link } from 'react-router'; // Link para la navegación
 
 interface BeneficiosProps {
   language: 'es' | 'en';
@@ -76,7 +76,7 @@ const Beneficios: React.FC<BeneficiosProps> = ({ language }) => {
         <p className="text-orange-500 mb-2 fuentePersonalizada fuente">
           {benefitsTitle}
         </p>
-        <h2 className="beneficios text-3xl font-[800] text-gray-900 mb-[40px]">
+        <h2 className="beneficios text-3xl font-extrabold text-gray-900 mb-[40px]">
           {whyBuyTitle}
         </h2>
 
@@ -142,7 +142,7 @@ const Beneficios: React.FC<BeneficiosProps> = ({ language }) => {
 
             {/* Botón para redirigir */}
             <Link to="/beneficios">
-              <button className="mt-6 lg:text-[.9rem] 2xl:text-base text-white bg-gradient-to-r from-green-500 to-green-600 rounded-[10px] shadow-lg hover:from-green-600 hover:to-green-700 transition-all duration-300 transform">
+              <button className="mt-6 lg:text-[.9rem] 2xl:text-base text-white bg-linear-to-r from-green-500 to-green-600 rounded-[10px] shadow-lg hover:from-green-600 hover:to-green-700 transition-all duration-300 transform">
                 {discoverMore}
               </button>
             </Link>

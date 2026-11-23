@@ -2,7 +2,7 @@ import React from 'react';
 import AgricultureIcon from '@mui/icons-material/Agriculture';
 import GiteIcon from '@mui/icons-material/Gite';
 import { GiFruitTree, GiFruitBowl } from 'react-icons/gi';
-import { useNavigate } from 'react-router-dom';
+import { useNavigate } from 'react-router';
 import './AdoptarArbol.css';
 import { ArbolInterface } from '../../store/services/arbolApi';
 
@@ -26,7 +26,7 @@ const AdoptarArbol: React.FC<AdoptarArbolProps> = ({ datos }) => {
         </div>
       </div>
 
-      <div className="relative -mt-6 p-4 bg-white rounded-t-xl text-center flex flex-col justify-between flex-grow">
+      <div className="relative -mt-6 p-4 bg-white rounded-t-xl text-center flex flex-col justify-between grow">
         <div>
           <div className="absolute top-0 left-1/2 transform -translate-x-1/2 -translate-y-1/2 bg-orange-500 rounded-full p-3 shadow-md">
             <GiFruitBowl size={22} className="text-white" aria-hidden="true" />
@@ -40,7 +40,7 @@ const AdoptarArbol: React.FC<AdoptarArbolProps> = ({ datos }) => {
             <p className="flex items-center text-gray-700 text-sm">
               <GiFruitTree
                 size={20}
-                className="text-[#FF9E2F] mr-2 flex-shrink-0"
+                className="text-[#FF9E2F] mr-2 shrink-0"
                 aria-hidden="true"
               />
               <span className="truncate">
@@ -50,7 +50,7 @@ const AdoptarArbol: React.FC<AdoptarArbolProps> = ({ datos }) => {
             </p>
             <p className="flex items-center text-gray-700 text-sm">
               <GiteIcon
-                className="text-[#FF9E2F] mr-2 flex-shrink-0"
+                className="text-[#FF9E2F] mr-2 shrink-0"
                 aria-hidden="true"
               />
               <span className="truncate">
@@ -62,7 +62,7 @@ const AdoptarArbol: React.FC<AdoptarArbolProps> = ({ datos }) => {
             </p>
             <p className="flex items-center text-gray-700 text-sm">
               <AgricultureIcon
-                className="text-[#FF9E2F] mr-1 flex-shrink-0"
+                className="text-[#FF9E2F] mr-1 shrink-0"
                 aria-hidden="true"
               />
               <span className="truncate">
@@ -80,7 +80,7 @@ const AdoptarArbol: React.FC<AdoptarArbolProps> = ({ datos }) => {
 
         <button
           onClick={() => navigate(`/adopta-un-arbol/${datos.id}`)}
-          className="w-full mt-4 text-white bg-gradient-to-r from-green-500 to-green-600 rounded-[10px] shadow-lg hover:from-green-600 hover:to-green-700 transition-all duration-300 transform"
+          className="w-full mt-4 text-white bg-linear-to-r from-green-500 to-green-600 rounded-[10px] shadow-lg hover:from-green-600 hover:to-green-700 transition-all duration-300 transform"
         >
           Adoptar este árbol
         </button>

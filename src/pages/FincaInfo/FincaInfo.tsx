@@ -57,7 +57,7 @@ const FincaInfo: React.FC = () => {
               ))}
             </Carousel>
             <motion.div
-              className="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black to-transparent p-6"
+              className="absolute bottom-0 left-0 right-0 bg-linear-to-t from-black to-transparent p-6"
               initial={{ opacity: 0, y: 30 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.5 }}
@@ -87,14 +87,14 @@ const FincaInfo: React.FC = () => {
                 },
               }}
             >
-              <motion.div className="bg-green-50 p-6 rounded-xl shadow-sm" variants={{ hidden: { opacity: 0 }, visible: { opacity: 1 } }}>
+              <motion.div className="bg-green-50 p-6 rounded-xl shadow-xs" variants={{ hidden: { opacity: 0 }, visible: { opacity: 1 } }}>
                 <h3 className="text-2xl font-semibold text-green-700 mb-4 flex items-center">
                   <Leaf className="mr-2" size={24} />
                   Prácticas Sostenibles
                 </h3>
                 <p className="text-gray-700">{finca.practicesSustainable}</p>
               </motion.div>
-              <motion.div className="bg-green-50 p-6 rounded-xl shadow-sm" variants={{ hidden: { opacity: 0 }, visible: { opacity: 1 } }}>
+              <motion.div className="bg-green-50 p-6 rounded-xl shadow-xs" variants={{ hidden: { opacity: 0 }, visible: { opacity: 1 } }}>
                 <h3 className="text-2xl font-semibold text-green-700 mb-4">Árboles Disponibles</h3>
                 <ul className="space-y-2">
                   {finca.arbol.map((tree: Arbol, index: number) => (
@@ -106,7 +106,7 @@ const FincaInfo: React.FC = () => {
                   ))}
                 </ul>
               </motion.div>
-              <motion.div className="bg-green-50 p-6 rounded-xl shadow-sm" variants={{ hidden: { opacity: 0 }, visible: { opacity: 1 } }}>
+              <motion.div className="bg-green-50 p-6 rounded-xl shadow-xs" variants={{ hidden: { opacity: 0 }, visible: { opacity: 1 } }}>
                 <h3 className="text-2xl font-semibold text-green-700 mb-4 flex items-center">
                   <User className="mr-2" size={24} />
                   Productor

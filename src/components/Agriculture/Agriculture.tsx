@@ -73,17 +73,17 @@ const Agriculture: React.FC<AgricultureProps> = ({ language }) => {
           alt="Naranjas"
         />
       </section>
-      <section className="w-[50%] 4xl:w-[30%] max-lg:w-[100%] max-lg:ml-16 max-lg:mt-16">
+      <section className="w-[50%] 4xl:w-[30%] max-lg:w-full max-lg:ml-16 max-lg:mt-16">
         <span className="text-[#FF9900] text-[20px] Typography">
           {crowdfarming}
         </span>
-        <h2 className="text-[#1F1E17] lg:text-[2.6rem] leading-none 2xl:text-5xl font-[800] w-[70%] lg:mb-[1rem] 2xl:mb-8 max-lg:w-[100%]">
+        <h2 className="text-[#1F1E17] lg:text-[2.6rem] leading-none 2xl:text-5xl font-extrabold w-[70%] lg:mb-4 2xl:mb-8 max-lg:w-full">
           {title}
         </h2>
-        <h3 className="text-[#4BAF47] lg:text-[1.16rem] 2xl:text-xl font-bold lg:mb-[1rem] 2xl:mb-[1.2rem]">
+        <h3 className="text-[#4BAF47] lg:text-[1.16rem] 2xl:text-xl font-bold lg:mb-4 2xl:mb-[1.2rem]">
           {subtitle}
         </h3>
-        <p className="text-[#878680] lg:text-[.9rem] 2xl:text-base lg:w-[90%] lg:mb-[1rem] 2xl:mb-[1.2rem] max-lg:w-[90%] max-lg:mb-8">
+        <p className="text-[#878680] lg:text-[.9rem] 2xl:text-base lg:w-[90%] lg:mb-4 2xl:mb-[1.2rem] max-lg:w-[90%] max-lg:mb-8">
           {description}
         </p>
         <div className="mb-[1.2rem] flex items-center max-lg:mb-8 gap-[15px]">
@@ -122,7 +122,7 @@ const Agriculture: React.FC<AgricultureProps> = ({ language }) => {
             </p>
           </div>
         </div>
-        <button className="text-white lg:text-[.9rem] 2xl:text-base bg-gradient-to-r from-green-500 to-green-600 rounded-[10px] shadow-lg hover:from-green-600 hover:to-green-700 transition-all duration-300 transform">
+        <button className="text-white lg:text-[.9rem] 2xl:text-base bg-linear-to-r from-green-500 to-green-600 rounded-[10px] shadow-lg hover:from-green-600 hover:to-green-700 transition-all duration-300 transform">
           <a href="/impacto-ambiental">{discoverMore}</a>
         </button>
       </section>

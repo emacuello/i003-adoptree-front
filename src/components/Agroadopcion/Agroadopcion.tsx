@@ -63,11 +63,11 @@ const Agroadopcion: React.FC<AgroadopcionProps> = ({ language }) => {
         <p className="text-orange-500 mb-2 fuentePersonalizada text-[28px] mt-[15px]">
           {content[language].title}
         </p>
-        <h2 className="text-3xl font-[800] text-gray-900 mb-[40px]">
+        <h2 className="text-3xl font-extrabold text-gray-900 mb-[40px]">
           {adoptionQuestion}
         </h2>
 
-        <div className="bg-white rounded px-[60px] py-[40px] max-w-7xl">
+        <div className="bg-white rounded-sm px-[60px] py-[40px] max-w-7xl">
           <div className="flex justify-between mb-[35px]">
             <div className="md:col-span-9 mb-9 md:mb-0 w-[500px]">
               <p className="text-left lg:text-[.9rem] 2xl:text-[16px] leading-[32px] text-gray-700">

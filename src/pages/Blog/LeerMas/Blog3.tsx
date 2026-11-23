@@ -42,7 +42,7 @@ const Post3: React.FC = () => {
               src="https://iica.int/sites/default/files/2021-03/WhatsApp%20Image%202021-03-05%20at%2012.11.55.jpeg"
               alt="Entrevista con el Dr. Juan Pérez"
             />
-            <div className="absolute inset-0 bg-gradient-to-t from-black to-transparent opacity-70"></div>
+            <div className="absolute inset-0 bg-linear-to-t from-black to-transparent opacity-70"></div>
             <h1 className="absolute bottom-4 left-4 text-3xl font-bold text-white">
               {title}
             </h1>

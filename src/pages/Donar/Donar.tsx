@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import backgroundImage from '../../assets/Mandarinas.jpg';
-import { useNavigate } from 'react-router-dom';
+import { useNavigate } from 'react-router';
 import './Donar.css';
 import { useLanguage } from '../../LanguageContext/LanguageContext';
 
@@ -85,7 +85,7 @@ const Donar: React.FC = () => {
         <img src={backgroundImage} alt="Background" />
       </div>
       <div className="donar-form shadow-lg">
-        <h2 className="mb-[30px] text-[1.9rem] font-[900]">
+        <h2 className="mb-[30px] text-[1.9rem] font-black">
           {language === 'es' ? 'Haz tu donación 🌱' : 'Make your donation 🌱'}
         </h2>
         <p className="text-[14px]">
@@ -171,7 +171,7 @@ const Donar: React.FC = () => {
           />
           <button
             type="submit"
-            className="text-white bg-gradient-to-r from-green-500 to-green-600 rounded-[10px] shadow-lg hover:from-green-600 hover:to-green-700 transition-all duration-300 transform"
+            className="text-white bg-linear-to-r from-green-500 to-green-600 rounded-[10px] shadow-lg hover:from-green-600 hover:to-green-700 transition-all duration-300 transform"
           >
             {language === 'es' ? 'Donar' : 'Donate'}
           </button>

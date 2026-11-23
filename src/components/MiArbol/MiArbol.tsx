@@ -120,7 +120,7 @@ const MiArbol = () => {
 
             {/* Botones de acciones */}
             <div className="flex space-x-4 mt-4">
-              <button className="text-white bg-gradient-to-r from-green-500 to-green-600 rounded-[10px] shadow-lg hover:from-green-600 hover:to-green-700 transition-all duration-300 transform">
+              <button className="text-white bg-linear-to-r from-green-500 to-green-600 rounded-[10px] shadow-lg hover:from-green-600 hover:to-green-700 transition-all duration-300 transform">
                 Ver más fotos
               </button>
               <button className="bg-gray-600 text-white py-2 px-4 rounded-[10px] shadow-lg hover:bg-gray-700">

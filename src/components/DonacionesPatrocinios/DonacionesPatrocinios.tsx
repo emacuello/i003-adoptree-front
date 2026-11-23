@@ -1,5 +1,5 @@
 import React from 'react';
-import { useNavigate } from 'react-router-dom';
+import { useNavigate } from 'react-router';
 import { Leaf, Users } from 'lucide-react';
 
 const DonacionesPatrocinios: React.FC = () => {
@@ -37,7 +37,7 @@ const DonacionesPatrocinios: React.FC = () => {
           </p>
           <button
             onClick={handleDonarAhora}
-            className="w-full bg-orange-500 text-white px-6 py-3 rounded-lg font-semibold text-lg transition-colors hover:bg-orange-600 focus:outline-none focus:ring-2 focus:ring-orange-500 focus:ring-opacity-50"
+            className="w-full bg-orange-500 text-white px-6 py-3 rounded-lg font-semibold text-lg transition-colors hover:bg-orange-600 focus:outline-hidden focus:ring-2 focus:ring-orange-500 focus:ring-opacity-50"
           >
             Donar ahora
           </button>
@@ -59,7 +59,7 @@ const DonacionesPatrocinios: React.FC = () => {
           </p>
           <button
             onClick={handleConocerMas}
-            className="w-full bg-orange-500 text-white px-6 py-3 rounded-lg font-semibold text-lg transition-colors hover:bg-orange-600 focus:outline-none focus:ring-2 focus:ring-orange-500 focus:ring-opacity-50"
+            className="w-full bg-orange-500 text-white px-6 py-3 rounded-lg font-semibold text-lg transition-colors hover:bg-orange-600 focus:outline-hidden focus:ring-2 focus:ring-orange-500 focus:ring-opacity-50"
           >
             Conoce más sobre patrocinios
           </button>

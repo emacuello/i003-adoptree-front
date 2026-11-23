@@ -45,7 +45,7 @@ const Post2: React.FC = () => {
               src="/src/assets/Reforestacion.jpg"
               alt="Importancia de la reforestación"
             />
-            <div className="absolute inset-0 bg-gradient-to-t from-black to-transparent opacity-70"></div>
+            <div className="absolute inset-0 bg-linear-to-t from-black to-transparent opacity-70"></div>
             <h1 className="absolute bottom-4 left-4 text-3xl font-bold text-white">
               {title}
             </h1>
