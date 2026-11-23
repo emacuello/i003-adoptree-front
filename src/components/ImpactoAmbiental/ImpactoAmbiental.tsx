@@ -1,12 +1,12 @@
 import React from 'react';
 import { motion } from 'framer-motion';
-import { Link } from 'react-router-dom';
+import { Link } from 'react-router';
 import '../../pages/About/AboutUsSection.css';
 import { useLanguage } from '../../LanguageContext/LanguageContext';
 
 // Common styles
 const sectionContainer = 'flex flex-col items-center gap-4 py-24';
-const sectionTitle = 'text-4xl font-[800] text-gray-800 mb-6 text-center';
+const sectionTitle = 'text-4xl font-extrabold text-gray-800 mb-6 text-center';
 const sectionContent = 'text-lg text-gray-600 max-w-3xl text-center mb-10';
 
 // Language translations
@@ -200,7 +200,7 @@ const Section: React.FC<{
       animate={{ opacity: 1, y: 0 }}
       transition={{ duration: 0.5 }}
     >
-      <h1 className="text-[3.5rem] font-[900] mb-6 text-gray-800">{title}</h1>
+      <h1 className="text-[3.5rem] font-black mb-6 text-gray-800">{title}</h1>
       <p className="text-xl text-gray-600 w-[590px]">{content}</p>
     </motion.div>
     <motion.div

@@ -21,7 +21,7 @@ interface Arbol {
   id: number;
   name: string;
   image: string;
-  icon: JSX.Element;
+  icon: React.JSX.Element;
 }
 
 const Arboles: React.FC<ArbolesProps> = ({ language }) => {
@@ -76,7 +76,7 @@ const Arboles: React.FC<ArbolesProps> = ({ language }) => {
         {/* HEADER o título */}
         <div className="text-center mb-8">
           <p className="text-orange-500 font-medium fuente">{adopt}</p>
-          <h2 className="text-3xl font-[800] text-gray-900">{treesTitle}</h2>
+          <h2 className="text-3xl font-extrabold text-gray-900">{treesTitle}</h2>
         </div>
 
         {/* Cards de árboles */}
@@ -106,7 +106,7 @@ const Arboles: React.FC<ArbolesProps> = ({ language }) => {
                 </h3>
 
                 {/* Botón */}
-                <button className="lg:text-[.9rem] 2xl:text-base mt-4 text-white bg-gradient-to-r from-green-500 to-green-600 rounded-[10px] shadow-lg hover:from-green-600 hover:to-green-700 transition-all duration-300 transform">
+                <button className="lg:text-[.9rem] 2xl:text-base mt-4 text-white bg-linear-to-r from-green-500 to-green-600 rounded-[10px] shadow-lg hover:from-green-600 hover:to-green-700 transition-all duration-300 transform">
                   {adoptButton}
                 </button>
               </div>

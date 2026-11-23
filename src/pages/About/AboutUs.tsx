@@ -80,7 +80,7 @@ const AboutUs = () => {
   return (
     <section className="about-section">
       <div className="max-w-6xl mx-auto">
-        <AnimatedText className="about-header font-[900]" delay={0.2}>
+        <AnimatedText className="about-header font-black" delay={0.2}>
           {language === 'es' ? 'Sobre Nosotros' : 'About Us'}
         </AnimatedText>
         
@@ -92,13 +92,13 @@ const AboutUs = () => {
 
         <AnimatedImageGrid images={[img1, img2, img3, img4]} />
 
-        <h3 className="text-[30px] font-[800] text-center mb-4">
+        <h3 className="text-[30px] font-extrabold text-center mb-4">
           {language === 'es'
             ? 'Nos aseguramos de que tu idea y creación se entreguen correctamente'
             : 'We ensure your idea and creation are delivered correctly'}
         </h3>
 
-        <div className="about-paragraphs-container grid grid-cols-1 md:grid-cols-2 gap-8 mx-auto px-4 max-w-screen-lg">
+        <div className="about-paragraphs-container grid grid-cols-1 md:grid-cols-2 gap-8 mx-auto px-4 max-w-(--breakpoint-lg)">
           {[
             language === 'es'
               ? 'Adoptree ofrece una conexión directa con los productores de cítricos en Argentina. Al adoptar un árbol, recibís una parte de la cosecha, apoyando la sostenibilidad agrícola.'
@@ -109,16 +109,16 @@ const AboutUs = () => {
           ].map((text, index) => (
             <div
               key={index}
-              className="about-paragraph bg-white border border-gray-200 p-6 rounded-lg shadow-sm hover:shadow-md transition-shadow"
+              className="about-paragraph bg-white border border-gray-200 p-6 rounded-lg shadow-xs hover:shadow-md transition-shadow"
             >
               <p className="text-base leading-relaxed text-gray-600">{text}</p>
             </div>
           ))}
         </div>
       </div>
-      <div className="bg-[#F7FAFC] flex flex-col items-center pt-[4rem] pb-12 px-6 gap-[4rem]">
+      <div className="bg-[#F7FAFC] flex flex-col items-center pt-16 pb-12 px-6 gap-16">
         <div className="w-full max-w-4xl">
-          <h3 className="text-[30px] font-[800] text-center">
+          <h3 className="text-[30px] font-extrabold text-center">
             {language === 'es'
               ? 'Nuestro compromiso con la sostenibilidad'
               : 'Our commitment to sustainability'}
@@ -152,7 +152,7 @@ const AboutUs = () => {
 
         {/* Sección de valores */}
         <div className="w-full max-w-4xl mb-12">
-          <h3 className="text-[30px] font-[800] text-center mb-4">
+          <h3 className="text-[30px] font-extrabold text-center mb-4">
             {language === 'es' ? 'Nuestros valores' : 'Our values'}
           </h3>
           <div className="about-values">

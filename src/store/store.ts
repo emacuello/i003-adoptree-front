@@ -1,6 +1,6 @@
 import { configureStore } from '@reduxjs/toolkit';
 import { persistStore, persistReducer } from 'redux-persist';
-import storage from 'redux-persist/lib/storage'; // Utiliza localStorage
+import storage from 'redux-persist/es/storage'; // localStorage (build ESM: la de lib/ es CJS y Vite 8 no la interopera)
 import { userSlice, UserState } from './features/userSlice';
 import { TypedUseSelectorHook, useDispatch, useSelector } from 'react-redux';
 import { arbolApi } from '../store/services/arbolApi'; // Importa el tipo Arbol

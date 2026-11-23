@@ -2,7 +2,7 @@ import React from 'react';
 import './BlogPage.css';
 import Reforestation from '../Blog/reforestation.jpg';
 import { Calendar, Tag, ChevronRight } from 'lucide-react';
-import { Link } from 'react-router-dom';
+import { Link } from 'react-router';
 import { useLanguage } from '../../LanguageContext/LanguageContext'; // Importar useLanguage
 
 const BlogPage: React.FC = () => {
@@ -79,7 +79,7 @@ const BlogPage: React.FC = () => {
               className="w-full md:w-1/2 h-64 object-cover rounded-tl-[100px] shadow-lg"
             />
             <div className="w-full md:w-1/2">
-              <h2 className="text-3xl font-[800] mb-4">
+              <h2 className="text-3xl font-extrabold mb-4">
                 {language === 'es'
                   ? 'Evolución del proyecto'
                   : 'Project Evolution'}
@@ -103,7 +103,7 @@ const BlogPage: React.FC = () => {
               className="w-full md:w-1/2 h-64 object-cover rounded-br-[100px] shadow-lg"
             />
             <div className="w-full md:w-1/2 text-right">
-              <h2 className="text-3xl font-[800] mb-4">
+              <h2 className="text-3xl font-extrabold mb-4">
                 {language === 'es'
                   ? 'Importancia de la reforestación'
                   : 'Importance of Reforestation'}
@@ -117,7 +117,7 @@ const BlogPage: React.FC = () => {
           </div>
         </div>
 
-        <h1 className="text-4xl font-[800] text-center mb-12">
+        <h1 className="text-4xl font-extrabold text-center mb-12">
           {language === 'es' ? 'Publicaciones Recientes' : 'Recent Posts'}
         </h1>
 

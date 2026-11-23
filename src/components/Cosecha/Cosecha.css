@@ -9,12 +9,15 @@
   color: #eb874d;
 }
 
-p {
-  text-align: center;
-  font-family: 'Lato', sans-serif;
-  font-weight: 700;
-  font-style: normal;
-  color: #cecaca;
+/* Selector de elemento: en Tailwind v4 va en @layer base para no pisar las utilidades (como en v3). */
+@layer base {
+  p {
+    text-align: center;
+    font-family: 'Lato', sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    color: #cecaca;
+  }
 }
 
 .icono {

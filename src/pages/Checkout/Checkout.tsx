@@ -8,7 +8,7 @@ import DeleteIcon from '@mui/icons-material/Delete';
 import farmerGirl from '../../assets/farmer-girl.svg';
 import ShippingSection, { AddressData } from '../../components/ShippingSection/ShippingSection';
 import PaymentMethodSection from '../../components/PaymentMethodSection/PaymentMethodSection';
-import { useParams } from 'react-router-dom';
+import { useParams } from 'react-router';
 import axios from 'axios';
 import { useDispatch, useSelector } from 'react-redux';
 import { setShippingAddresses } from '../../store/features/userSlice';
@@ -120,7 +120,7 @@ const Checkout = () => {
               <div>
                 <div className="flex justify-between bg-[#f9fafa] p-[20px] gap-[150px] items-center rounded-[4px] text-[#7e8591]">
                   <div>
-                    <p className="text-gray-700 font-[500]">
+                    <p className="text-gray-700 font-medium">
                       Adopción de {arbol.type}
                     </p>
                     <p>Nombre del árbol</p>
@@ -130,14 +130,14 @@ const Checkout = () => {
                 <p className="mt-4 mb-2">Cantidad reservada</p>
                 <div className="flex items-center gap-[20px]">
                   <button
-                    className="px-[14px] py-[4px] bg-[#e9ecf3] rounded-[10px] text-[#bfc1c4] font-[600]"
+                    className="px-[14px] py-[4px] bg-[#e9ecf3] rounded-[10px] text-[#bfc1c4] font-semibold"
                     onClick={() => handleQuantityChange(-1)}
                   >
                     -
                   </button>
-                  <span className="text-[#4BAF47] font-[600]">{quantity}</span>
+                  <span className="text-[#4BAF47] font-semibold">{quantity}</span>
                   <button
-                    className="px-[14px] py-[4px] text-white bg-gradient-to-r from-green-500 to-green-600 rounded-[10px] shadow-lg hover:from-green-600 hover:to-green-700 transition-all duration-300 transform"
+                    className="px-[14px] py-[4px] text-white bg-linear-to-r from-green-500 to-green-600 rounded-[10px] shadow-lg hover:from-green-600 hover:to-green-700 transition-all duration-300 transform"
                     onClick={() => handleQuantityChange(1)}
                   >
                     +
@@ -147,7 +147,7 @@ const Checkout = () => {
             </div>
             <div className="flex justify-end mt-[20px]">
               <div>
-                <p className="flex justify-end mb-2 font-[600]">
+                <p className="flex justify-end mb-2 font-semibold">
                   $ {totalPrice.toFixed(2)}
                 </p>
                 <p className="text-sm text-gray-500">
@@ -196,7 +196,7 @@ const Checkout = () => {
               {renderStepContent()}
             </div>
 
-            <div className="p-[20px] shadow rounded-[4px]">
+            <div className="p-[20px] shadow-sm rounded-[4px]">
               <h3 className="text-xl font-semibold">Resumen</h3>
 
               <div className="mt-[20px] flex items-center gap-[150px]">
@@ -207,7 +207,7 @@ const Checkout = () => {
               </div>
 
               <button
-                className="text-white bg-gradient-to-r from-green-500 to-green-600 rounded-[10px] shadow-lg hover:from-green-600 hover:to-green-700 transition-all duration-300 transform my-6 w-full"
+                className="text-white bg-linear-to-r from-green-500 to-green-600 rounded-[10px] shadow-lg hover:from-green-600 hover:to-green-700 transition-all duration-300 transform my-6 w-full"
                 onClick={
                   activeStep === steps.length - 1
                     ? handleAdoptionComplete

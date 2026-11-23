@@ -110,7 +110,7 @@ const Bienvenido: React.FC<BienvenidoProps> = ({ language }) => {
               alt="titulo"
             />
           ) : (
-            <h1 className="tipografiaCards leading-[0.8] text-left text-[105px] 4xl:text-[140px] font-[500] mb-8 w-[600px] 4xl:w-[800px]">
+            <h1 className="tipografiaCards leading-[0.8] text-left text-[105px] 4xl:text-[140px] font-medium mb-8 w-[600px] 4xl:w-[800px]">
               Sustainable Agroadoption
             </h1>
           )}
@@ -132,7 +132,7 @@ const Bienvenido: React.FC<BienvenidoProps> = ({ language }) => {
                 .getElementById('como-adoptar')
                 ?.scrollIntoView({ behavior: 'smooth' })
             }
-            className="w-[220px] lg:text-[.9rem] 2xl:text-base text-white bg-gradient-to-r from-green-500 to-green-600 rounded-[10px] shadow-lg hover:from-green-600 hover:to-green-700 transition-all duration-300 transform"
+            className="w-[220px] lg:text-[.9rem] 2xl:text-base text-white bg-linear-to-r from-green-500 to-green-600 rounded-[10px] shadow-lg hover:from-green-600 hover:to-green-700 transition-all duration-300 transform"
             whileHover={{ scale: 1.05 }}
             whileTap={{ scale: 0.95 }}
           >
@@ -171,7 +171,7 @@ const Bienvenido: React.FC<BienvenidoProps> = ({ language }) => {
               <motion.img
                 src={card.image}
                 alt={card.subtitle}
-                className="lg:h-[4rem] lg:w-[4rem] 2xl:h-[6rem] 2xl:w-[6rem] mx-auto rounded-full mb-4"
+                className="lg:h-16 lg:w-16 2xl:h-24 2xl:w-24 mx-auto rounded-full mb-4"
                 whileHover={{ rotate: 360 }}
                 transition={{ duration: 0.5 }}
               />

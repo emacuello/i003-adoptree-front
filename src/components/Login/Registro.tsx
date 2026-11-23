@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import backgroundImage from '../../assets/citricos.jpg';
 import logo from '../../assets/Header.png';
-import { Link, useNavigate } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router';
 // import { useDispatch, useSelector } from 'react-redux';
 import './Login.css';
 import { validateForm } from '../../helpers/validateForm';
@@ -118,16 +118,16 @@ const Login: React.FC = () => {
 
   return (
     <div className="login-container p-[50px]">
-      <div className="login-image shadow-sm">
+      <div className="login-image shadow-xs">
         <img src={backgroundImage} alt="Background" />
       </div>
-      <div className="login-form shadow-sm">
+      <div className="login-form shadow-xs">
         <img
           src={logo}
           alt="Adoptree Logo"
           className="logo w-[115px] mb-[30px]"
         />
-        <h2 className="mb-[30px] font-[900]">Bienvenido 🌱</h2>
+        <h2 className="mb-[30px] font-black">Bienvenido 🌱</h2>
         <p className="text-[14px]">
           ¡Regístrate ahora! Es fácil, rápido y totalmente gratis.
         </p>
@@ -170,7 +170,7 @@ const Login: React.FC = () => {
 
           <button
             type="submit"
-            className="text-white bg-gradient-to-r from-green-500 to-green-600 rounded-[10px] shadow-lg hover:from-green-600 hover:to-green-700 transition-all duration-300 transform"
+            className="text-white bg-linear-to-r from-green-500 to-green-600 rounded-[10px] shadow-lg hover:from-green-600 hover:to-green-700 transition-all duration-300 transform"
           >
             Registrate
           </button>
@@ -178,7 +178,7 @@ const Login: React.FC = () => {
 
         <p className="signup-text text-[14px] mt-[100px]">
           ¿Ya tenés cuenta?{' '}
-          <Link className="font-[500]" to="/auth/login">
+          <Link className="font-medium" to="/auth/login">
             Inicia sesión
           </Link>
         </p>

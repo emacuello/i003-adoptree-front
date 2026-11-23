@@ -89,7 +89,7 @@ const ShippingSection: React.FC<ShippingSectionProps> = ({ onComplete }) => {
             value={shippingInfo.fullName}
             onChange={handleInputChange}
             required
-            className="mt-1 block w-full rounded-md p-1 border-gray-300 shadow-sm focus:border-green-500 focus:ring-green-500"
+            className="mt-1 block w-full rounded-md p-1 border-gray-300 shadow-xs focus:border-green-500 focus:ring-green-500"
           />
         </div>
         <div>
@@ -106,7 +106,7 @@ const ShippingSection: React.FC<ShippingSectionProps> = ({ onComplete }) => {
             value={shippingInfo.address}
             onChange={handleInputChange}
             required
-            className="mt-1 block w-full rounded-md p-1 border-gray-300 shadow-sm focus:border-green-500 focus:ring-green-500"
+            className="mt-1 block w-full rounded-md p-1 border-gray-300 shadow-xs focus:border-green-500 focus:ring-green-500"
           />
         </div>
         <div className="grid grid-cols-2 gap-4">
@@ -124,7 +124,7 @@ const ShippingSection: React.FC<ShippingSectionProps> = ({ onComplete }) => {
               value={shippingInfo.city}
               onChange={handleInputChange}
               required
-              className="mt-1 block w-full rounded-md p-1 border-gray-300 shadow-sm focus:border-green-500 focus:ring-green-500"
+              className="mt-1 block w-full rounded-md p-1 border-gray-300 shadow-xs focus:border-green-500 focus:ring-green-500"
             />
           </div>
           <div>
@@ -141,7 +141,7 @@ const ShippingSection: React.FC<ShippingSectionProps> = ({ onComplete }) => {
               value={shippingInfo.province}
               onChange={handleInputChange}
               required
-              className="mt-1 block w-full rounded-md p-1 border-gray-300 shadow-sm focus:border-green-500 focus:ring-green-500"
+              className="mt-1 block w-full rounded-md p-1 border-gray-300 shadow-xs focus:border-green-500 focus:ring-green-500"
             />
           </div>
         </div>
@@ -160,7 +160,7 @@ const ShippingSection: React.FC<ShippingSectionProps> = ({ onComplete }) => {
               value={shippingInfo.postalCode}
               onChange={handleInputChange}
               required
-              className="mt-1 block w-full rounded-md p-1 border-gray-300 shadow-sm focus:border-green-500 focus:ring-green-500"
+              className="mt-1 block w-full rounded-md p-1 border-gray-300 shadow-xs focus:border-green-500 focus:ring-green-500"
             />
           </div>
           <div>
@@ -175,7 +175,7 @@ const ShippingSection: React.FC<ShippingSectionProps> = ({ onComplete }) => {
               name="country"
               value={shippingInfo.country}
               onChange={handleInputChange}
-              className="mt-1 block w-full rounded-md p-1 border-gray-300 shadow-sm focus:border-green-500 focus:ring-green-500"
+              className="mt-1 block w-full rounded-md p-1 border-gray-300 shadow-xs focus:border-green-500 focus:ring-green-500"
             >
               <option value="España">Argentina</option>
               {/* Añade más países según sea necesario */}
@@ -196,12 +196,12 @@ const ShippingSection: React.FC<ShippingSectionProps> = ({ onComplete }) => {
             value={shippingInfo.phoneNumber}
             onChange={handleInputChange}
             required
-            className="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-green-500 focus:ring-green-500"
+            className="mt-1 block w-full rounded-md border-gray-300 shadow-xs focus:border-green-500 focus:ring-green-500"
           />
         </div>
         <button
           type="submit"
-          className="mt-4 px-4 py-2 bg-green-500 text-white rounded-md hover:bg-green-600 focus:outline-none focus:ring-2 focus:ring-green-500 focus:ring-opacity-50"
+          className="mt-4 px-4 py-2 bg-green-500 text-white rounded-md hover:bg-green-600 focus:outline-hidden focus:ring-2 focus:ring-green-500 focus:ring-opacity-50"
         >
           Guardar y Continuar
         </button>

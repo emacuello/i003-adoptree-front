@@ -88,7 +88,7 @@ const PaymentMethodSection: React.FC = () => {
                 value={cardInfo.cardNumber}
                 onChange={handleCardInfoChange}
                 required
-                className="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-green-500 focus:ring-green-500"
+                className="mt-1 block w-full rounded-md border-gray-300 shadow-xs focus:border-green-500 focus:ring-green-500"
               />
             </div>
             <div>
@@ -105,7 +105,7 @@ const PaymentMethodSection: React.FC = () => {
                 value={cardInfo.cardName}
                 onChange={handleCardInfoChange}
                 required
-                className="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-green-500 focus:ring-green-500"
+                className="mt-1 block w-full rounded-md border-gray-300 shadow-xs focus:border-green-500 focus:ring-green-500"
               />
             </div>
             <div className="grid grid-cols-2 gap-4">
@@ -124,7 +124,7 @@ const PaymentMethodSection: React.FC = () => {
                   onChange={handleCardInfoChange}
                   placeholder="MM/AA"
                   required
-                  className="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-green-500 focus:ring-green-500"
+                  className="mt-1 block w-full rounded-md border-gray-300 shadow-xs focus:border-green-500 focus:ring-green-500"
                 />
               </div>
               <div>
@@ -141,7 +141,7 @@ const PaymentMethodSection: React.FC = () => {
                   value={cardInfo.cvv}
                   onChange={handleCardInfoChange}
                   required
-                  className="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-green-500 focus:ring-green-500"
+                  className="mt-1 block w-full rounded-md border-gray-300 shadow-xs focus:border-green-500 focus:ring-green-500"
                 />
               </div>
             </div>

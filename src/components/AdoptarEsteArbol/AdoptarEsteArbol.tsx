@@ -1,8 +1,8 @@
 import React, { useEffect, useState } from 'react';
-import { useNavigate, useParams } from 'react-router-dom';
+import { useNavigate, useParams } from 'react-router';
 import { ArrowLeft, Heart, MapPin } from 'lucide-react';
 import axios from 'axios';
-import { Link } from 'react-router-dom';
+import { Link } from 'react-router';
 
 type Cosecha = {
   id: number;
@@ -78,7 +78,7 @@ const AdoptarEsteArbol: React.FC = () => {
           </p>
           <button
             onClick={() => navigate('/adopta-un-arbol')}
-            className="text-white bg-gradient-to-r from-green-500 to-green-600 rounded-[10px] shadow-lg hover:from-green-600 hover:to-green-700 transition-all duration-300 transform"
+            className="text-white bg-linear-to-r from-green-500 to-green-600 rounded-[10px] shadow-lg hover:from-green-600 hover:to-green-700 transition-all duration-300 transform"
           >
             Volver a la lista de árboles
           </button>
@@ -91,7 +91,7 @@ const AdoptarEsteArbol: React.FC = () => {
     <div className="min-h-screen bg-[#f8f7f0] py-12 px-4 sm:px-6 lg:px-8">
       <div className="max-w-4xl mx-auto bg-white rounded-xl shadow-md overflow-hidden mt-[150px]">
         <div className="md:flex">
-          <div className="md:flex-shrink-0 md:w-1/2">
+          <div className="md:shrink-0 md:w-1/2">
             <img
               className="h-64 w-full object-cover md:h-full"
               src={arbol.images[0]}
@@ -112,7 +112,7 @@ const AdoptarEsteArbol: React.FC = () => {
                 arbol.finca.productor.apellido}
             </p>
             <div className="mt-3 flex items-center text-sm text-gray-500">
-              <MapPin className="flex-shrink-0 mr-1.5 h-5 w-5 text-gray-400" />
+              <MapPin className="shrink-0 mr-1.5 h-5 w-5 text-gray-400" />
               <p>{arbol.finca.ubication}</p>
             </div>
             <p className="mt-4 text-3xl font-bold text-[#4BAF47]">
@@ -125,11 +125,11 @@ const AdoptarEsteArbol: React.FC = () => {
             <div className="mt-6 space-y-4">
               <button
                 onClick={() => navigate(`/checkout/${arbol.id}`)}
-                className="w-full flex items-center justify-center text-white bg-gradient-to-r from-green-500 to-green-600 rounded-[10px] shadow-md hover:from-green-600 hover:to-green-700 transition-all duration-300 transform"
+                className="w-full flex items-center justify-center text-white bg-linear-to-r from-green-500 to-green-600 rounded-[10px] shadow-md hover:from-green-600 hover:to-green-700 transition-all duration-300 transform"
               >
                 <Heart className="mr-2 h-5 w-5" /> Adoptar
               </button>
-              <button className="w-full flex items-center justify-center px-4 py-2 border border-gray-300 rounded-[10px] shadow-sm text-base font-medium text-gray-700 bg-white hover:bg-gray-50 focus:outline-none focus:ring-2 focus:ring-offset-2">
+              <button className="w-full flex items-center justify-center px-4 py-2 border border-gray-300 rounded-[10px] shadow-xs text-base font-medium text-gray-700 bg-white hover:bg-gray-50 focus:outline-hidden focus:ring-2 focus:ring-offset-2">
                 <Link
                   className="flex items-center justify-center"
                   to={`/adopta-un-arbol`}

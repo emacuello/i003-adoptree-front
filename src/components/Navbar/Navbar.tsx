@@ -9,7 +9,7 @@ import {
 import { useLanguage } from '../../LanguageContext/LanguageContext';
 import Logo from '../../assets/adoptree 1.png';
 import { useSelector, useDispatch } from 'react-redux';
-import { Link, useNavigate } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router';
 import { logout } from '../../store/features/userSlice';
 import { RootState } from '../../types/types';
 import { io } from 'socket.io-client';
@@ -170,13 +170,13 @@ const Navbar: React.FC = () => {
                 <LoginIcon className="text-[#05264ebf] text-base font-light" />
                 <Link
                   to="/auth/login"
-                  className="text-[#05264E] mobile:font-[500] mobile:text-[1.1rem] desktop:font-normal desktop:text-base 4xl:text-[20px]"
+                  className="text-[#05264E] mobile:font-medium mobile:text-[1.1rem] desktop:font-normal desktop:text-base 4xl:text-[20px]"
                 >
                   {language === 'es' ? 'Inicia sesión' : 'Login'}
                 </Link>
               </div>
             )}
-            <button className="text-white bg-gradient-to-r from-green-500 to-green-600 rounded-[10px] shadow-lg hover:from-green-600 hover:to-green-700 transition-all duration-300 transform">
+            <button className="text-white bg-linear-to-r from-green-500 to-green-600 rounded-[10px] shadow-lg hover:from-green-600 hover:to-green-700 transition-all duration-300 transform">
               <a href="/adopta-un-arbol">
                 {language === 'es' ? 'Adopta ahora' : 'Adopt now'}
               </a>
@@ -199,7 +199,7 @@ const Navbar: React.FC = () => {
 
                 {showModal && (
                   <div
-                    className="absolute w-[11rem] md:top-[3.8rem] desktop:top-[4.1rem] bg-white gap-4 md:right-[96px] lg:right-[235px] 2xl:right-[166px] p-5 rounded shadow-md"
+                    className="absolute w-44 md:top-[3.8rem] desktop:top-[4.1rem] bg-white gap-4 md:right-[96px] lg:right-[235px] 2xl:right-[166px] p-5 rounded-sm shadow-md"
                     ref={modalRef}
                   >
                     <div>
@@ -232,7 +232,7 @@ const Navbar: React.FC = () => {
                 )}
                 {notificationsModal && (
                   <div
-                    className="absolute md:top-[3.8rem] desktop:top-[4.1rem] w-[14rem] bg-white gap-4 md:right-[50px] lg:right-[185px] 2xl:right-[122px] px-1 min-h-[7.8rem] rounded shadow-md"
+                    className="absolute md:top-[3.8rem] desktop:top-[4.1rem] w-56 bg-white gap-4 md:right-[50px] lg:right-[185px] 2xl:right-[122px] px-1 min-h-[7.8rem] rounded-sm shadow-md"
                     ref={modalRef}
                   >
                     <div className="flex flex-col items-center">
